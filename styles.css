@@ -1,0 +1,765 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+
+	font-size: 30px;
+}
+
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+
+}
+
+.logo {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	margin-bottom: 20px; /* Adjust as needed */
+	max-width: 25%;
+	max-height: 25%;
+}
+
+.logo-contact {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	margin-bottom: 10px; /* Adjust as needed */
+	max-width: 25%;
+	max-height: 25%;
+}
+
+.logo-homebutton {
+	display: flex;
+	max-width: 35%;
+	max-height: 35%;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	transition: opacity 0.1s; /* Add transition for smooth opacity change */
+}
+
+.logo-homebutton, .logo-contact {
+	cursor: pointer; /* Change cursor to pointer */
+}
+
+.logo-homebutton:hover {
+	opacity: 0.5; /* Reduce opacity on hover */
+}
+
+.logo-contact:hover {
+	opacity: 0.5; /* Reduce opacity on hover */
+}
+
+
+nav {
+	background-color: #444;
+	padding: 10px;
+	text-align: center;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 40px;
+	font-size: 50px;
+	transition: font-size 0.3s ease, opacity 0.3s ease;
+}
+
+nav a:hover {
+	opacity: 0.5; /* Change opacity on hover */
+}
+
+
+main {
+
+	padding: 0px;
+	text-align: center; /* Center align content */
+}
+
+.hidden {
+	display: none;
+}
+
+.section-header {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	padding: 10px;
+}
+
+.section-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	width: 100%;
+}
+
+
+.contact-info {
+	margin-left: auto;
+	text-align: right;
+}
+
+.contact-info h3 {
+	margin-bottom: 5px;
+}
+
+.contact-info p {
+	margin: 0;
+}
+
+.footer-content {
+	padding: 20px;
+}
+/* Style the form */
+form {
+	max-width: 75%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	background-color: #f9f9f9;
+}
+
+.full-width-image {
+	width: 100%; /* Maximum width of the image container */
+	min-height: 225px; /* Set a fixed height for all boxes */
+	max-height: 733px; /* Maximum height of the image container */
+	object-fit: cover;
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	position: relative; /* Add position relative for absolute positioning */
+}
+
+.box {
+	width: 50%; /* Occupy full width */
+	flex: 1 0 calc(50% - 40px); /* Initial size of each item and allow it to grow */
+	min-height: 400px; /* Set a fixed height for all boxes */
+	max-height: 750px; /* Maximum height of the image container */
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	position: relative; /* Add position relative for absolute positioning */
+}
+
+.box img {
+	width: 100%; /* Maximum width of the image container */
+	min-height: 400px; /* Set a fixed height for all boxes */
+	max-height: 750px; /* Maximum height of the image container */
+	object-fit: cover;
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	position: relative; /* Add position relative for absolute positioning */
+	transition: opacity 0.3s ease;
+}
+
+.box-content {
+	text-align: center;
+	position: absolute;
+	flex: 1 0 calc(100% - 40px); /* Initial size of each item and allow it to grow */
+	max-width: calc(100% - 40px); /* Ensure items don't exceed 1/3 of the container width */
+	top: 50%; /* Position content in the middle vertically */
+	left: 50%; /* Position content in the center horizontally */
+	transform: translate(-50%, -50%); /* Move content back by half its size */
+	width: calc(100% - 20px); /* Adjust max-width to prevent overflow */
+	transition: font-size 0.3s ease, opacity 0.3s ease;;
+}
+
+.contact-container {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	flex-direction: column;
+	width: 100%; /* Ensure the container takes up the full width */
+	text-align: center; /* Center the text */
+}
+
+.buy-button {
+	display: inline-block;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	top: 50%; /* Position content in the middle vertically */
+	left: 50%; /* Position content in the center horizontally */
+	transform: translate(-0%, -10%); /* Move content back by half its size */
+	background-color: #333;
+	color: #fff;
+	border-radius: 12px; /* Adjusted border radius */
+	text-decoration: none;
+	padding: 24px 45px;
+	font-size: 29px;
+	transition: font-size 0.3s ease, opacity 0.3s ease;
+}
+
+.buy-button:hover {
+	transition: opacity 0.1s; /* Add transition for smooth opacity change */
+	opacity: 0.5; /* Reduce opacity on hover */
+}
+		
+/* Default styles for works and shops */
+.works-gallery, .shops-gallery {
+	max-width: 100%; /* Set a maximum width for the container */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-sizing: border-box; /* Include padding in the total width */
+	transition: font-size 0.3s ease, opacity 0.3s ease;;
+}
+
+.works-item, .shops-item {
+	background-color: #F5F5F5;
+	
+	/* color | style */
+	outline: #F5F5F5 solid 6px;
+	border-radius: 1rem;			
+	flex: 1 0 calc(50% - 40px); /* Initial size of each item and allow it to grow */
+	margin: 20px; /* Margin between items */
+	max-width: calc(100% - 40px); /* Ensure items don't exceed 1/3 of the container width */		
+	transition: font-size 0.3s ease, opacity 0.3s ease;;
+}
+
+
+
+@media screen and (min-width: 1800px) {
+	.works-item, .shops-item {
+		flex: 1 0 calc(33.33% - 40px); /* Three items per row for larger screens */
+		max-width: calc(33.33% - 40px); /* Ensure items don't exceed 1/3 of the container width */
+	}
+}
+
+
+@media screen and (min-width: 2560px) {
+	.works-item, .shops-item {
+		flex: 1 0 calc(25% - 40px); /* Four items per row for larger screens */
+		max-width: calc(25% - 40px); /* Ensure items don't exceed 1/4 of the container width */
+	}
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 960px) {
+	.works-gallery, .shops-gallery {
+		padding: 0 10px; /* Reduce padding for smaller screens */
+	}
+
+	.works-item, .shops-item {
+		flex: 1 0 calc(50% - 20px); /* Two items per row for smaller screens */
+		max-width: calc(100% - 40px); /* Ensure items don't exceed 1/3 of the container width */
+	}
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+	.works-item, .shops-item {
+		flex: 1 0 calc(100% - 20px); /* One item per row for even smaller screens */
+		max-width: calc(100% - 40px); /* Ensure items don't exceed 1/3 of the container width */
+	}
+}
+
+/* Common styles for works and shops items */
+.works-item img, .shops-item img {
+	width: 100%;
+	top: 50%; /* Position content in the middle vertically */
+	left: 50%; /* Position content in the center horizontally */
+	transform: translate(-50%, -0%); /* Move content back by half its size */
+	height: 400px;
+	object-fit: cover;
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	position: relative; /* Add position relative for absolute positioning */
+}
+
+.works-description, .shops-description {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	width: calc(100% - 20px); /* Adjust max-width to prevent overflow */
+}
+
+
+/* Media Queries */
+@media (max-width: 2200px) {
+	body {
+		font-size: 28px;
+	}
+	.buy-button {
+		padding: 24px 45px;
+		font-size: 29px;
+		margin-top: 20px
+		margin-bottom: 5px;
+						
+	}
+	.works-item img, .shops-item img {
+		height: 325px;
+	}	
+	nav a {
+		font-size: 42px; /* Reduce font size by 20% */
+		margin: 0 36px;
+	}
+	
+	.logo {
+		max-width: 28%;
+		max-height: 28%;
+	}
+	
+	.logo-contact {
+		max-width: 28%;
+		max-height: 28%;
+	}
+	
+	.logo-homebutton {
+		max-width: 38%;
+		max-height: 38%;
+	}
+
+}
+
+@media (min-width: 2560px) {
+	body {
+		font-size: 32px;
+	}
+	.buy-button {
+		padding: 27px 49px;
+		font-size: 31px;
+		margin-bottom: 25px;
+		margin-top: 5px
+	}
+	
+	.works-item img, .shops-item img {
+		height: 320px;
+	}	
+	nav a {
+		font-size: 60px; /* Reduce font size by 20% */
+		margin: 0 48px;
+	}
+	
+	.logo {
+		max-width: 24%;
+		max-height: 24%;
+	}
+	
+	.logo-contact {
+		max-width: 24%;
+		max-height: 24%;
+	}
+	
+	.logo-homebutton {
+		max-width: 34%;
+		max-height: 34%;
+	}
+}
+
+@media (min-width: 3000px) {
+	body {
+		font-size: 40px;
+	}
+	.buy-button {
+		padding: 32px 56px;
+		font-size: 35px;
+		margin-bottom: 55px;
+		margin-top: 0px
+	}
+	.works-item img, .shops-item img {
+		height: 340px;
+	}	
+	nav a {
+		font-size: 70px;
+		margin: 0 50px;
+	}
+	
+	.logo {
+		max-width: 20%;
+		max-height: 20%;
+	}
+	
+	.logo-contact {
+		max-width: 20%;
+		max-height: 20%;
+	}
+	
+	.logo-homebutton {
+		max-width: 30%;
+		max-height: 30%;
+	}
+
+}
+	
+@media (max-width: 1800px) {
+	body {
+		font-size: 24px;
+	}
+	.buy-button {
+		padding: 24px 44px;
+		font-size: 27px;
+
+		margin-top: 15px
+	}
+	
+	.works-item img, .shops-item img {
+		height: 370px;
+	}	
+	nav a {
+		font-size: 36px; /* Reduce font size by 20% */
+		margin: 0 30px;
+	}
+	
+	.logo {
+		min-width: 31%;
+		min-height: 31%;
+	}
+	
+	.logo-contact {
+		min-width: 31%;
+		min-height: 31%;
+	}
+	
+	.logo-homebutton {
+		min-width: 41%;
+		min-height: 41%;
+	}
+}
+	
+@media (max-width: 1600px) {
+	body {
+		font-size: 24px;
+	}
+	.buy-button {
+		padding: 24px 44px;
+		font-size: 27px;
+
+		margin-top: 15px
+	}
+	
+	.works-item img, .shops-item img {
+		height: 335px;
+	}	
+	nav a {
+		font-size: 36px; /* Reduce font size by 20% */
+		margin: 0 30px;
+	}
+	
+	.logo {
+		min-width: 31%;
+		min-height: 31%;
+	}
+	
+	.logo-contact {
+		min-width: 31%;
+		min-height: 31%;
+	}
+	
+	.logo-homebutton {
+		min-width: 41%;
+		min-height: 41%;
+	}
+}
+
+@media (max-width: 1280px) {
+	body {
+		font-size: 22px;
+	}
+	.buy-button {
+		padding: 21px 37px;
+		font-size: 25px;
+		margin-bottom: 10px;
+		margin-top: 15px
+
+	}
+	
+	.works-item img, .shops-item img {
+		height: 260px;
+	}	
+	nav a {
+		font-size: 30px; /* Reduce font size by 20% */
+		margin: 0 26px;
+	}
+	
+	.logo {
+		min-width: 34%;
+		min-height: 34%;
+	}
+	
+	.logo-contact {
+		min-width: 34%;
+		min-height: 34%;
+	}
+	
+	.logo-homebutton {
+		min-width: 44%;
+		min-height: 44%;
+	}
+
+}
+
+@media (max-width: 960px) {
+	body {
+		font-size: 24px;
+	}
+	.buy-button {
+		padding: 24px 44px;
+		font-size: 30px;
+		margin-bottom: 25px;
+		margin-top: 17px
+	}
+	
+	.works-item img, .shops-item img {
+		height: 410px;
+	}	
+	nav a {
+		font-size: 28.8px; /* Reduce font size by 20% */
+	margin: 0 22px;
+	}
+	.section-content {
+		flex-direction: column; /* Display boxes vertically */
+	}
+	/* Box order adjustments */
+	.box:nth-child(1) { order: 2; }
+	.box:nth-child(2) { order: 1; }
+	.box:nth-child(3) { order: 3; }
+	.box:nth-child(4) { order: 4; }
+	.box:nth-child(5) { order: 5; }
+	.box:nth-child(6) { order: 6; }
+	.box { width: 100%; height 400px; }
+	.box img {
+		width: 100%;
+		max-height: 400px;
+		object-fit: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	
+	.logo {
+		min-width: 39%;
+		min-height: 39%;
+	}
+	
+	.logo-contact {
+		min-width: 39%;
+		min-height: 39%;
+	}
+	
+	.logo-homebutton {
+		min-width: 49%;
+		min-height: 49%;
+	}
+}
+
+@media (max-width: 840px) {
+	body {
+		font-size: 22px;
+	}
+	.buy-button {
+		padding: 22px 42px;
+		font-size: 28px;
+		margin-bottom: 25px;
+		margin-top: 20px
+	}	
+	.works-item img, .shops-item img {
+		height: 375px;
+	}	
+	
+	nav a {
+		font-size: 27px;
+		margin: 0 20px;
+	}
+	.logo {
+		min-width: 41%;
+		min-height: 41%;
+	}
+	
+	.logo-contact {
+		min-width: 41%;
+		min-height: 41%;
+	}
+	
+	.logo-homebutton {
+		min-width: 51%;
+		min-height: 51%;
+	}
+
+}
+
+@media (max-width: 720px) {
+	body {
+		font-size: 21px;
+	}
+	.buy-button {
+		padding: 21px 40px;
+		font-size: 26px;
+		margin-bottom: 25px;
+		margin-top: 20px
+	}		
+	.works-item img, .shops-item img {
+		height: 300px;
+	}	
+	nav a {
+		font-size: 23px;
+		margin: 0 18px;
+	}
+	.logo {
+		min-width: 43%;
+		min-height: 43%;
+	}
+	
+	.logo-contact {
+		min-width: 43%;
+		min-height: 43%;
+	}
+	
+	.logo-homebutton {
+		min-width: 53%;
+		min-height: 53%;
+	}
+}
+
+@media (max-width: 600px) {
+	body {
+		font-size: 20px;
+	}
+	.buy-button {
+		padding: 20px 36px;
+		font-size: 24px;
+		margin-bottom: 25px;
+		margin-top: 25px
+	}	
+	.works-item img, .shops-item img {
+		height: 240px;
+	}	
+	
+	nav a {
+		font-size: 20px;
+		margin: 0 16px;
+	}
+	.logo {
+		min-width: 45%;
+		min-height: 45%;
+	}
+	
+	.logo-contact {
+		min-width: 45%;
+		min-height: 45%;
+	}
+	
+	.logo-homebutton {
+		min-width: 55%;
+		min-height: 55%;
+	}
+	
+}
+
+@media (max-width: 480px) {
+	body {
+		font-size: 18px;
+	}
+	.buy-button {
+		padding: 14px 22px;
+		font-size: 24px;
+		margin-bottom: 0px;
+		margin-top: 25px
+	}	
+	.full-width-image {
+		min-height: 225px; /* Set a fixed height for all boxes */
+		max-height: 250px; /* Maximum height of the image container */
+	}
+	.works-item img, .shops-item img {
+		height: 190px;
+	}				
+	nav a {
+		font-size: 18px;
+		margin: 0 14px;
+	}
+	.logo {
+		min-width: 47%;
+		min-height: 47%;
+	}
+	
+	.logo-contact {
+		min-width: 47%;
+		min-height: 47%;
+	}
+	
+	.logo-homebutton {
+		min-width: 57%;
+		min-height: 57%;
+	}
+	
+}
+
+@media (max-width: 360px) {
+	body {
+		font-size: 16px;
+	}
+	.buy-button {
+		padding: 16px 16px;
+		font-size: 22px;
+		margin-bottom: 25px;
+		margin-top: 25px
+	}	
+	.full-width-image {
+		min-height: 175px; /* Set a fixed height for all boxes */
+		max-height: 225px; /* Maximum height of the image container */
+	}
+
+	.works-item img, .shops-item img {
+		height: 125px;
+	}	
+	
+	nav a {
+		font-size: 14px;
+		margin: 0 10px;
+	}
+	.logo {
+		min-width: 48%;
+		min-height: 48%;
+	}
+	
+	.logo-contact {
+		min-width: 48%;
+		min-height: 48%;
+	}
+	
+	.logo-homebutton {
+		min-width: 58%;
+		min-height: 58%;
+	}
+	
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add other CSS styles as needed */
