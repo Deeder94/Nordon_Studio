@@ -279,7 +279,7 @@ form {
 .works-item iframe {
     width: 100%;
 	height: auto;
-    max-height: 110px; /* Adjusted height */
+    max-height: 92px; /* Adjusted height */
 	display: inline-block;
 	justify-content: center; /* Center horizontally */
 	align-items: center; /* Center vertically */
@@ -381,7 +381,7 @@ form {
 	top: 50%; /* Position content in the middle vertically */
 	left: 50%; /* Position content in the center horizontally */
 	transform: translate(-50%, -2%); /* Move content back by half its size */
-	height: 300px;
+	height: 250px;
 	object-fit: cover;
 	display: flex;
 	justify-content: center; /* Center horizontally */
