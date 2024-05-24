@@ -168,6 +168,7 @@ form {
 
 .box img {
 	width: 100%; /* Maximum width of the image container */
+	height: auto;
 	min-height: 400px; /* Set a fixed height for all boxes */
 	max-height: 750px; /* Maximum height of the image container */
 	object-fit: cover;
@@ -205,7 +206,7 @@ form {
 	align-items: center; /* Center vertically */
 	top: 50%; /* Position content in the middle vertically */
 	left: 50%; /* Position content in the center horizontally */
-	transform: translate(-0%, -35%); /* Move content back by half its size */
+	transform: translate(-0%, -0%); /* Move content back by half its size */
 	background-color: #333;
 	color: #fff;
 	border-radius: 12px; /* Adjusted border radius */
@@ -258,7 +259,22 @@ form {
     margin: 0px;
 }
 
+.works-item buy-button, .shops-item  buy-button {
+	display: inline-block;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	top: 50%; /* Position content in the middle vertically */
+	left: 50%; /* Position content in the center horizontally */
+	transform: translate(-0%, -35%); /* Move content back by half its size */
+	background-color: #333;
+	color: #fff;
+	border-radius: 12px; /* Adjusted border radius */
+	text-decoration: none;
+	padding: 24px 45px;
+	font-size: 29px;
+	transition: font-size 0.3s ease, opacity 0.3s ease;
 
+}
 
 .works-item iframe {
     width: 100%;
