@@ -688,6 +688,9 @@ form {
 		font-size: 23px;
 		margin: 0 18px;
 	}
+	.shops-item img {
+		height: 365px;
+	}	
 	.logo {
 		min-width: 43%;
 		min-height: 43%;
@@ -713,7 +716,9 @@ form {
 		font-size: 24px;
 	}	
 
-	
+	.shops-item img {
+		height: 355px;
+	}	
 	nav a {
 		font-size: 20px;
 		margin: 0 16px;
@@ -743,6 +748,9 @@ form {
 		padding: 14px 22px;
 		font-size: 24px;
 	}	
+	.shops-item img {
+		height: 350px;
+	}
 	.full-width-image {
 		min-height: 225px; /* Set a fixed height for all boxes */
 		max-height: 250px; /* Maximum height of the image container */
