@@ -603,7 +603,11 @@ form {
 		padding: 24px 44px;
 		font-size: 30px;
 	}
-	
+	.shops-item img {
+		transform: translate(-50%, -5%); /* Move content back by half its size */
+		height: 325
+	}		
+
 	nav a {
 		font-size: 28.8px; /* Reduce font size by 20% */
 	margin: 0 22px;
@@ -654,7 +658,10 @@ form {
 		font-size: 28px;
 	}	
 
-	
+	.shops-item img {
+		transform: translate(-50%, -7%); /* Move content back by half its size */
+		height: 300
+	}		
 	nav a {
 		font-size: 27px;
 		margin: 0 20px;
@@ -683,7 +690,12 @@ form {
 	.buy-button {
 		padding: 21px 40px;
 		font-size: 26px;
-	}		
+	}	
+
+	.shops-item img {
+		transform: translate(-50%, -5%); /* Move content back by half its size */
+		height: 230px;
+	}
 	nav a {
 		font-size: 23px;
 		margin: 0 18px;
@@ -717,8 +729,9 @@ form {
 	}	
 
 	.shops-item img {
-		height: 355px;
-	}	
+		transform: translate(-50%, -10%); /* Move content back by half its size */
+		height: 270px;
+	}
 	nav a {
 		font-size: 20px;
 		margin: 0 16px;
@@ -749,8 +762,11 @@ form {
 		font-size: 24px;
 	}	
 	.shops-item img {
-		height: 350px;
+		transform: translate(-50%, -10%); /* Move content back by half its size */
+		height: 250px;
 	}
+
+
 	.full-width-image {
 		min-height: 225px; /* Set a fixed height for all boxes */
 		max-height: 250px; /* Maximum height of the image container */
