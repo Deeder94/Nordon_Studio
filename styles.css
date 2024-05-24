@@ -169,7 +169,7 @@ form {
 .box img {
 	width: 100%; /* Maximum width of the image container */
 	height: auto;
-	min-height: 400px; /* Set a fixed height for all boxes */
+	min-height: 225px; /* Set a fixed height for all boxes */
 	max-height: 750px; /* Maximum height of the image container */
 	object-fit: cover;
 	display: flex;
