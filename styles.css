@@ -206,7 +206,7 @@ form {
 	align-items: center; /* Center vertically */
 	top: 50%; /* Position content in the middle vertically */
 	left: 50%; /* Position content in the center horizontally */
-	transform: translate(-0%, -25%); /* Move content back by half its size */
+	transform: translate(-0%, -20%); /* Move content back by half its size */
 	background-color: #333;
 	color: #fff;
 	border-radius: 12px; /* Adjusted border radius */
@@ -255,7 +255,7 @@ form {
 	align-items: center; /* Center vertically */
 	top: 50%; /* Position content in the middle vertically */
 	left: 50%; /* Position content in the center horizontally */
-	transform: translate(-0%, -35%); /* Move content back by half its size */
+	transform: translate(-0%, -30%); /* Move content back by half its size */
     margin: 0px;
 }
 
@@ -265,7 +265,6 @@ form {
 	align-items: center; /* Center vertically */
 	top: 50%; /* Position content in the middle vertically */
 	left: 50%; /* Position content in the center horizontally */
-	transform: translate(-0%, -35%); /* Move content back by half its size */
 	background-color: #333;
 	color: #fff;
 	border-radius: 12px; /* Adjusted border radius */
@@ -314,7 +313,7 @@ form {
 }
 
 .works-item h4, .shops-item h4 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 	justify-content: center; /* Center horizontally */
 	align-items: center; /* Center vertically */
 	top: 50%; /* Position content in the middle vertically */
